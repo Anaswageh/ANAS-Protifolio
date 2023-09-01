@@ -39,3 +39,12 @@ display: none;
   }
   
 }
+@media  (max-width:1112px){
+ 
+  .navbar-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 20px;
+  }
+}
