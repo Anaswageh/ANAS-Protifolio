@@ -103,18 +103,11 @@ nav .navbar {
 
 /* home*/
 .home .main-img {
-  background-image: url(../images/anas.jpg);
-  background-size: cover;
-  width: 60%;
-  height: 100%;
   border: 1px solid #ffbd3942;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
+  border-radius: 40%;
   margin-top: 20px;
   margin-left: 10px;
 }
-
 .home .main-info p {
   color: white;
   font-size: 15px;
