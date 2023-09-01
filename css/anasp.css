@@ -9,7 +9,6 @@
 }
 
 body {
-
   overflow-x: hidden;
   font-family: "Poppins", Arial, sans-serif;
   background: #000000;
@@ -23,7 +22,7 @@ body {
 .header {
   background-color: black;
   color: white;
-  min-height: 75px;
+  height: 65px;
   transition: all 2s;
   display: flex;
   justify-content: space-between;
@@ -102,19 +101,15 @@ nav .navbar {
 
 
 /* home*/
-.home .main-img {
- 
-  margin-top: 20px;
-  height: 200px;
-  
+.home .main-img  {
+  border-radius: 10%;
+  border: 1px solid var(--yellow-color);
 }
 .home .main-info p {
   color: white;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
-
-
 }
 
 .home .main-info h1 {
@@ -161,21 +156,11 @@ nav .navbar {
 
 /*about*/
 .about .main-img {
-  background-image: url(../images/photo-1522252234503-e356532cafd5.jpg);
-  background-size: cover;
-  width: 80%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   border-radius: 4px;
 }
-
-
-
 .aboutword {
   position: relative;
 }
-
 .about .aboutword p {
   margin-top: 40px;
   margin-left: 10px;
@@ -336,7 +321,6 @@ nav .navbar {
 .services .box {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
-
   border-radius: 6px;
   display: flex;
   text-align: center;
@@ -370,7 +354,6 @@ nav .navbar {
   width: 40px;
   background-color: var(--yellow-color);
   position: absolute;
-
   bottom: 35px;
 }
 
@@ -393,7 +376,6 @@ nav .navbar {
   width: 40px;
   background-color: black;
   position: absolute;
-
   bottom: 35px;
 }
 
@@ -413,7 +395,6 @@ nav .navbar {
   color: rgba(255, 255, 255, 0.103);
   position: absolute;
   top: 2px;
-
 }
 
 .skillsword .small {
@@ -421,7 +402,6 @@ nav .navbar {
   font-weight: 700;
   color: white;
   margin-left: 10px;
-
 }
 
 .skillsword p {
@@ -435,7 +415,6 @@ nav .navbar {
   height: 10px;
   position: relative;
   background-color: rgba(255, 255, 255, 0.103);
-
 }
 
 .w3-progressbar {
@@ -484,7 +463,6 @@ nav .navbar {
   font-weight: 700;
   color: white;
   margin-left: 10px;
-
 }
 
 .projectsword p {
