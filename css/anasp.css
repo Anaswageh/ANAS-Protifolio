@@ -1,0 +1,661 @@
+* {
+  box-sizing: border-box;
+
+}
+
+:root {
+  --yellow-color: #ffbd39;
+  --main-color: black;
+}
+
+body {
+
+  overflow-x: hidden;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #000000;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+
+
+}
+
+.header {
+  background-color: black;
+  color: white;
+  min-height: 75px;
+  transition: all 2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.left-nav {
+  margin-left: 20%;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 25px;
+}
+
+.navbar-brand p {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+.menu-sticky.sticky {
+
+  background: var(--main-color);
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  margin: 0 auto;
+  padding-bottom: 0 30px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav .navbar {
+  position: relative;
+}
+
+.navbar-nav>.active>a {
+  color: var(--yellow-color);
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link:before {
+  content: "";
+  background-color: var(--yellow-color);
+  width: 100%;
+  height: 2px;
+  transform-origin: 50%;
+  transform: scaleX(0);
+  transition-property: transform;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover:before {
+  transform: scaleX(1);
+}
+
+
+.navbar-nav .nav-link:active {
+  color: var(--yellow-color) !important;
+
+}
+
+
+/* home*/
+.home .main-img {
+  background-image: url(../images/anas.jpg);
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+  border: 1px solid #ffbd3942;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.home .main-info p {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+
+}
+
+.home .main-info h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: "Poppins", Arial, sans-serif;
+
+}
+
+.home .main-info h1 span {
+  color: var(--yellow-color);
+
+
+}
+
+.home .main-info h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-family: "Poppins", Arial, sans-serif;
+
+}
+
+.home .main-info button.hire {
+  height: 50px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: var(--yellow-color);
+  margin-right: 10px;
+
+}
+
+.home .main-info button.works {
+  height: 50px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.521);
+  color: rgba(255, 255, 255, 0.726);
+
+}
+
+/*about*/
+.about .main-img {
+  background-image: url(../images/photo-1522252234503-e356532cafd5.jpg);
+  background-size: cover;
+  width: 80%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+
+
+.aboutword {
+  position: relative;
+}
+
+.about .aboutword p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.425)
+}
+
+.about .small {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.about .big {
+  font-size: 90px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.103);
+  position: absolute;
+  top: 2px;
+
+}
+
+.about p {
+  color: white;
+}
+
+.about h6 {
+  color: rgba(255, 255, 255, 0.425);
+  margin-top: 5px;
+
+}
+
+.about h3 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.about h3 span {
+  color: var(--yellow-color);
+}
+
+.about button.hire {
+  height: 50px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: var(--yellow-color);
+  margin-right: 10px;
+
+}
+
+/*resume*/
+.resumeword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.resumeword .big {
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.103);
+  position: absolute;
+  top: 2px;
+
+}
+
+.resumeword .small {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.resumeword p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.425);
+}
+
+.resume .box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+
+  border-radius: 6px;
+}
+
+.resume .box h1 {
+  color: var(--yellow-color);
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.resume .box h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+
+.resume .box h6 {
+  font-weight: 300;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.425);
+}
+
+.resume .box h6 span {
+  color: var(--yellow-color);
+}
+
+.resumeword button.hire {
+  height: 50px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: var(--yellow-color);
+  margin-right: 10px;
+
+}
+
+/*services*/
+.servicesword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.servicesword .big {
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.103);
+  position: absolute;
+  top: 2px;
+
+}
+
+.servicesword .small {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.servicesword p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.425);
+}
+
+.services .box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+
+  border-radius: 6px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.sevice-1 a {
+  text-decoration: none;
+}
+
+.sevice-1 a i {
+  font-size: 35px;
+  height: 25px;
+  color: var(--yellow-color);
+}
+
+.sevice-1 a p {
+  font-size: 17px;
+  color: white;
+  position: relative;
+}
+
+.sevice-1 {
+  position: relative;
+}
+
+.sevice-1::after {
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: var(--yellow-color);
+  position: absolute;
+
+  bottom: 35px;
+}
+
+.sevice-1:hover {
+  background-color: var(--yellow-color);
+
+}
+
+.sevice-1:hover.sevice-1 a i {
+  color: white;
+}
+
+.sevice-1:hover.sevice-1 a p {
+  color: black;
+}
+
+.sevice-1:hover.sevice-1::after {
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: black;
+  position: absolute;
+
+  bottom: 35px;
+}
+
+/*skills*/
+.skillsword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.skillsword .big {
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.103);
+  position: absolute;
+  top: 2px;
+
+}
+
+.skillsword .small {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.skillsword p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.425);
+}
+
+.w3-progress-container {
+  width: 100%;
+  height: 10px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.103);
+
+}
+
+.w3-progressbar {
+  background-color: var(--yellow-color);
+  height: 100%;
+  position: absolute;
+  line-height: inherit
+}
+
+.w3-round-xlarge {
+  border-radius: 3px;
+}
+
+.skills .lang {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .lang p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*projects*/
+.projectsword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.projectsword .big {
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.103);
+  position: absolute;
+  top: 2px;
+
+}
+
+.projectsword .small {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.projectsword p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.425);
+}
+
+.projects-box1 a.proj1 img {
+  border-radius: 4px;
+}
+
+.projects .background {
+  background-image: url(../images/bg_1.jpg);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects .background h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.projects .background h1 span {
+  color: var(--yellow-color);
+}
+
+.background button.hire {
+  width: 140px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: var(--yellow-color);
+  margin-right: 10px;
+
+}
+
+/*contact*/
+.contactword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.contactword .big {
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.103);
+  position: absolute;
+  top: 2px;
+
+}
+
+.contactword .small {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.contactword p {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.425);
+}
+
+.contact .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+
+}
+
+.contact .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.contact .logo i {
+  color: var(--yellow-color);
+  font-size: 30px;
+}
+
+.contact .word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact .word h5 {
+  color: white;
+  margin-top: 20px;
+}
+
+.contact .word p {
+  color: rgba(255, 255, 255, 0.425);
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/*footer*/
+.footer h4 {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.582);
+  font-size: 15px;
+}
+
+.footer .social a {
+  color: var(--yellow-color);
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.links .link-deco {
+  display: flex;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.596);
+  font-size: 17px;
+  font-weight: 400;
+}
