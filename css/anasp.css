@@ -22,7 +22,7 @@ body {
 .header {
   background-color: black;
   color: white;
-  height: 65px;
+  min-height: 65px;
   transition: all 2s;
   display: flex;
   justify-content: space-between;
